@@ -34,6 +34,10 @@ def main():
             if player.check_collisions(i) == True:
                 print("Game Over!")
                 exit()
+        for i in asteroids:
+            for n in shots:
+                if n.check_collisions(i):
+                    i.split()
         screen.fill("black")
         
         for i in drawables:
